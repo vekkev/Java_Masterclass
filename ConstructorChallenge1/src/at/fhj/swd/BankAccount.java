@@ -6,15 +6,15 @@ public class BankAccount {
     private double accountBalance;
     private String customerName;
     private String emailAddress;
-    private int phoneNumber;
+    private String phoneNumber;
 
-//    public BankAccount(int accountNumber, double balance, String customerName, String emailAdress, int phoneNumber) {
-//        this.accountNumber = accountNumber;
-//        this.accountBalance = balance;
-//        this.customerName = customerName;
-//        this.emailAddress = emailAdress;
-//        this.phoneNumber = phoneNumber;
-//    }
+    public BankAccount(int accountNumber, double balance, String customerName, String emailAddress, String phoneNumber) {
+        this.accountNumber = accountNumber;
+        this.accountBalance = balance;
+        this.customerName = customerName;
+        this.emailAddress = emailAddress;
+        this.phoneNumber = phoneNumber;
+    }
 
     public int getAccountNumber() {
         return accountNumber;
@@ -48,11 +48,12 @@ public class BankAccount {
         this.emailAddress = emailAddress;
     }
 
-    public int getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(int phoneNumber) {
+
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
 
